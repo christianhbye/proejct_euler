@@ -1,7 +1,12 @@
-# By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even
-# -valued terms.
+"""
+By considering the terms in the Fibonacci sequence whose values do not exceed
+four million, find the sum of the even-valued terms.
+"""
 
-import numpy as np
+# every third number is even (since odd + even = odd, odd + odd = even)
+# i.e., index 1, 4, 7 etc
+# a4 = a3 + a2 = (a1 + a2) + a2 = a1 + 2a2 = 3a1 + 2a0
+
 
 # brute force code
 fib = [1, 2]
